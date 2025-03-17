@@ -36,9 +36,9 @@ button {
 /*********
 Layout
 *********/
-.team-container {
-    align-content: last;
-}
+/* .team-container {
+    align-content: ;
+} */
 
 .team-title {
     margin: 0;
@@ -48,10 +48,11 @@ Layout
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    align-items: center;
 }
 
-@media (min-width: 400px),
-       (min-resolution: 2dppx) {
+@media (min-width: 600px) and (max-resolution: 2dppx),
+       (min-width: 1200px) and (min-resolution: 2dppx) {
     .score-board {
         flex-direction: row;
     }
@@ -59,14 +60,12 @@ Layout
 
 .score-card {
     display: flex;
-    justify-content: fit-content;
-    height: fit-content;
     margin-bottom: 1rem;
     text-align: center;
 }
 
-@media (min-width: 400px),
-       (min-resolution: 2dppx) {
+@media (min-width: 600px) and (max-resolution: 2dppx),
+       (min-width: 1200px) and (min-resolution: 2dppx) {
     .score-card {
         flex-direction: column;
     }
@@ -77,8 +76,8 @@ Layout
     justify-content: center;
     background-color: black;
     border-radius: 5px;
-    width: auto;
     flex-grow: 1;
+    min-width: 150px;
 }
 
 .score {
@@ -92,8 +91,8 @@ Layout
     padding: 0px 0.5rem;
 }
 
-@media (min-width: 400px),
-       (min-resolution: 2dppx) {
+@media (min-width: 600px) and (max-resolution: 2dppx),
+       (min-width: 1200px) and (min-resolution: 2dppx) {
     .button-panel {
         flex-direction: row;
         padding: 0.5rem 0;
@@ -114,12 +113,5 @@ button {
 }
 
 .reset-button-container {
-    text-align: left;
-}
-
-@media (min-width: 400px),
-       (min-resolution: 2dppx) {
-    .reset-button-container {
-        text-align: center;
-    }
+    text-align: center;
 }
