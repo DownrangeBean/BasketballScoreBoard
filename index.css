@@ -4,10 +4,8 @@
 }
 
 body {
-    
     font-size: 1rem;
     background-color: #1b244a;
-    /* margin: 0; */
 }
 
 /**********
@@ -17,13 +15,13 @@ typography
     color: white;
     font-size: 3.25rem;
     text-transform: uppercase;
-    font-family:Verdana, Geneva, Tahoma, sans-serif
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .display-panel {
     font-family: CursedTimer;
     color: red;
-    font-size: 6em;
+    font-size: 8em;
     text-align: center;
 }
 
@@ -52,7 +50,8 @@ Layout
     justify-content: space-evenly;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px),
+       (min-resolution: 2dppx) {
     .score-board {
         flex-direction: row;
     }
@@ -66,7 +65,8 @@ Layout
     text-align: center;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px),
+       (min-resolution: 2dppx) {
     .score-card {
         flex-direction: column;
     }
@@ -92,7 +92,8 @@ Layout
     padding: 0px 0.5rem;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px),
+       (min-resolution: 2dppx) {
     .button-panel {
         flex-direction: row;
         padding: 0.5rem 0;
@@ -116,7 +117,8 @@ button {
     text-align: left;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 400px),
+       (min-resolution: 2dppx) {
     .reset-button-container {
         text-align: center;
     }
